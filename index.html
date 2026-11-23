@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Love you</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- MUSIC TOGGLE -->
+        <div id="musicToggle" class="music-btn">🔊</div>
+
+        <audio id="bgMusic" src="./assets/user_bg_music.mp3" loop></audio>
+        <canvas id="bg"></canvas>
+        <canvas id="hearts"></canvas>
+        <!-- CARD THƯ -->
+        <div class="card" id="letterCard">
+            <h2>Love you</h2>
+            <span class="corner-heart left"></span>
+            <span class="corner-heart right"></span>
+            <!-- chữ gõ trực tiếp trên card -->
+            <p id="typing" class="content"></p>
+
+            <div class="heart-btn">
+                <span class="center-heart"></span>
+            </div>
+        </div>
+
+        <!-- SLIDE ẢNH -->
+        <div class="card hidden" id="slideCard">
+            <h2>Love you</h2>
+
+            <div class="photo">
+                <img id="slideImg" src="images/a1.jpg" />
+            </div>
+            <div class="controls">
+                <button onclick="prev()">❮</button>
+                <button>❤️</button>
+                <button onclick="next()">❯</button>
+            </div>
+        </div>
+
+        <script>
+            window.CONFIG = {
+                message: `Gửi em một cái ôm❤️
+ Dưới hình hài một bó hoa xinh
+Hy vọng anh và em,sẽ không chỉ là một đoạn kí ức đẹp,mà hy vọng là cả một hành trình dài có cơ hội đi cùng nhau...
+  A thích một cô gái luôn cố gắng vì tương lai của mình...❤️
+ kiểu người bận rộn với công việc,với ước mơ nhưng vẫn dịu dàng như e ý😂..
+  A ko cần e phải hoàn hảo đâu...
+chỉ cần mỗi ngày vẫn cố gắng,vẫn dịu dàng và sống hết mình với những điều phía trước là đủ khiến a rung động rồi..❤️
+Chúc cô gái luôn vui vẻ,bình an và nhớ rằng...Có người đang nhớ e rất nhiều❤️🥰`,
+                speed: "55",
+                images: '["./assets/user_images_0.jpg"]'
+            };
+        </script>
+        <script src="script.js"></script>
+    	<!-- Cơ chế bảo mật (Chống soi code) -->
+	<script src="./anti-devtools.js"></script>
+</body>
+</html>
